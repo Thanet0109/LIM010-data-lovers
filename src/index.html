@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body id="body" class="bodyLogin">
@@ -49,106 +50,40 @@
     </section>
 
 <!---ScreenSelectCountry-->
-<section  id="screenindicatorcountries" class="backgroundindicators hide">
+<section  id="screenindicatorcountries" class="backgroundindicators">
     <section id="screencountry" class="hide overview">
-     <div>
+     <div id="foranclas">
        <h class="titleindicators">Indicadores</h><br/><br/>
-       <h class="titletypeindicator">Protección social y trabajo</h><br/><br/>
-      <ul>
-          <a id="SL.TLF.PART.FE.ZS" href=# value="SL.TLF.PART.FE.ZS">Empleo de tiempo parcial, mujeres (% del total de mujeres empleadas)</a><br/>
-          <a id="SL.TLF.INTM.FE.ZS" href=# value="SL.TLF.INTM.FE.ZS">Fuerza laboral con educación intermedia, mujeres (% de la fuerza laboral femenina)</a><br/>
-          <a id="SL.TLF.CACT.FE.ZS" href=# value="SL.TLF.CACT.FE.ZS">Tasa de población activa, mujeres (% de la población femenina mayor de 15 años) (estimación modelado OIT)</a><br/>
-          <a id="SL.TLF.BASC.FE.ZS" href=# value="SL.TLF.BASC.FE.ZS">Fuerza laboral con educación básica, mujeres (% de la fuerza laboral femenina)</a><br/>
-          <a id="SL.TLF.ADVN.FE.ZS" href=# value="SL.TLF.ADVN.FE.ZS">Fuerza laboral con educación avanzada, mujeres (% de la fuerza laboral femenina)</a><br/>
-          <a id="SL.TLF.ACTI.FE.ZS" href=# value="SL.TLF.ACTI.FE.ZS">Tasa de participación en la fuerza laboral, mujeres (% de la población femenina entre 15-64 años) (estimación modelado OIT)</a><br/>
-          <a id="SL.TLF.ACTI.1524.FE.ZS" href=# value="SL.TLF.ACTI.1524.FE.ZS">Tasa de participación en la fuerza laboral, mujeres (% de la población femenina entre 15-24 años) (estimación modelado OIT)</a><br/>
-          <a id="SL.SRV.EMPL.FE.ZS" href=# value="SL.SRV.EMPL.FE.ZS">Empleados de servicios, mujeres (% del empleo femenino)</a><br/>
-          <a id="SL.UEM.TOTL.FE.ZS" href=# value="SL.UEM.TOTL.FE.ZS">Desempleo, mujeres (% de la población activa femenina) (estimación modelado OIT)</a><br/>
-          <a id="SL.UEM.TOTL.FE.NE.ZS" href=# value="SL.UEM.TOTL.FE.NE.ZS">Desempleo, mujeres (% de participación femenina en la fuerza laboral) (estimación nacional)</a><br/>
-          <a id="SL.UEM.INTM.FE.ZS" href=# value="SL.UEM.INTM.FE.ZS">Personas desempleadas con educación intermedia, mujeres</a><br/>
-          <a id="SL.UEM.BASC.FE.ZS" href=# value="SL.UEM.BASC.FE.ZS">Personas desempleadas con educación básica, mujeres</a><br/>
-          <a id="SL.UEM.ADVN.FE.ZS" href=# value="SL.UEM.ADVN.FE.ZS">Personas desempleadas con educación avanzada, mujeres</a><br/>
-          <a id="SL.UEM.1524.FE.ZS" href=# value="SL.UEM.1524.FE.ZS">Desempleo, mujeres jóvenes (% de la población activa femenina entre 15 y 24 años de edad) (estimación modelado OIT)</a><br/>
-          <a id="SL.TLF.TOTL.FE.ZS" href=# value="SL.TLF.TOTL.FE.ZS">Población activa, mujeres (% de la población activa total)</a><br/>        
-          <a id="SL.EMP.WORK.FE.ZS" href=# value="SL.EMP.WORK.FE.ZS">Trabajadores asalariados (empleados), mujeres (% del empleo femenino)</a><br/>
-          <a id="SL.EMP.VULN.FE.ZS" href=# value="SL.EMP.VULN.FE.ZS">Empleo vulnerable, mujeres (% del empleo femenino)</a><br/>
-          <a id="SL.EMP.TOTL.SP.FE.ZS" href=# value="SL.EMP.TOTL.SP.FE.ZS">Relación entre empleo y población, mayores de 15 años, mujeres (%) (estimación modelado OIT)</a><br/>
-        </ul><br/>    
+       <h class="titletypeindicator">Empleo</h><br/><br/>
+         <div id="listSL">
+         </div><br/>    
       <h class="titletypeindicator">Desarrollo Social</h><br/><br/>
-      <ul> 
-          <a id="HD.HCI.OVRL.LB.FE" href=# value="HD.HCI.OVRL.LB.FE">Índice de Capital Humano, femenino, límite inferior (escala de 0 a 1)</a><br/>
-          <a id="HD.HCI.OVRL.FE" href=# value="HD.HCI.OVRL.FE">Índice de Capital Humano, femenino (escala de 0 a 1)</a><br/>
-          <a id="SP.UWT.TFRT" href=# value="SP.UWT.TFRT">Necesidades de anticoncepción insatisfechas (% de mujeres casadas entre 15 y 49 años de edad)</a><br/>
-          <a id="HD.HCI.OVRL.UB.FE" href=# value="HD.HCI.OVRL.UB.FE">Índice de Capital Humano, femenino, límite superior (escala de 0 a 1)</a><br/>
-          <a id="SL.EMP.SMGT.FE.ZS" href=# value="SL.EMP.SMGT.FE.ZS">Proporción de mujeres con empleo en puestos gerenciales de nivel superior e intermedio (%)</a><br/>
-          <a id="SL.EMP.SELF.FE.ZS" href=# value="SL.EMP.SELF.FE.ZS">Independientes, mujeres (% del empleo femenino)</a><br/>
-          <a id="SL.EMP.MPYR.FE.ZS" href=# value="SL.EMP.MPYR.FE.ZS">Empleadores, mujeres (% del empleo femenino)</a><br/> 
-          <a id="IC.REG.DURS.FE" href=# value="IC.REG.DURS.FE">Tiempo necesario para iniciar un negocio, mujeres (días)</a><br/>
-          <a id="IC.FRM.FEMO.ZS" href=# value="IC.FRM.FEMO.ZS">Empresas con participación de mujeres en la propiedad (% de empresas)</a><br/>
-          <a id="IC.FRM.FEMM.ZS" href=# value="IC.FRM.FEMM.ZS">Porcentaje de empresas con manager mujer (promedio entre empresas que reportan)</a><br/>
-          <a id="SL.IND.EMPL.FE.ZS" href=# value="SL.IND.EMPL.FE.ZS">Empleados en la industria, mujeres (% del empleo femenino)</a><br/>   
-          <a id="SH.ANM.NPRG.ZS" href=# value="SH.ANM.NPRG.ZS">Prevalencia de anemia entre mujeres no embarazadas (% de mujeres entre 15-49 años)</a><br/>
-        </ul><br/>
+         <ul id="listHD" > 
+         </ul><br/>
       <h class="titletypeindicator">Género</h><br/><br/>
-      <ul>
-          <a id="SG.VAW.REFU.ZS" href=# value="SG.VAW.REFU.ZS">Mujeres que creen que está justificado que un marido golpee a su esposa cuando ella se niega a tener relaciones sexuales (%)</a><br/>
-          <a id="SG.VAW.REAS.ZS" href=# value="SG.VAW.REAS.ZS">Mujeres que creen que está justificado que un marido golpee a su esposa (cualquiera de las cinco razones) (%)</a><br/>
-          <a id="SG.VAW.NEGL.ZS" href=# value="SG.VAW.NEGL.ZS">Mujeres que creen que está justificado que un marido golpee a su esposa cuando descuida a los hijos (%)</a><br/>
-          <a id="SG.VAW.GOES.ZS" href=# value="SG.VAW.GOES.ZS">Mujeres que creen que está justificado que un marido golpee a su esposa cuando sale sin avisarle (%)</a><br/>
-          <a id="SG.VAW.BURN.ZS" href=# value="SG.VAW.BURN.ZS">Mujeres que creen que está justificado que un marido golpee a su esposa cuando a ella se le quema la comida (%)</a><br/>
-          <a id="SG.VAW.ARGU.ZS" href=# value="SG.VAW.ARGU.ZS">Mujeres que creen que está justificado que un marido golpee a su esposa cuando ella discute con él (%)</a><br/>      
-          <a id="SG.JOB.NOPN.EQ" href=# value="SG.JOB.NOPN.EQ">Las mujeres no embarazadas y que no amamantan pueden hacer los mismos trabajos que los hombres (1=sí; 0=no)</a><br/>
-          <a id="SG.GEN.PARL.ZS" href=# value="SG.GEN.PARL.ZS">Proporción de escaños ocupados por mujeres en los parlamentos nacionales (%)</a><br/>    
-          <a id="SP.M18.2024.FE.ZS" href=# value="SP.M18.2024.FE.ZS">Mujeres que se casaron por primera vez antes de los 18 (% de mujeres 10-24)</a><br/>
-          <a id="SE.ADT.LITR.FE.ZS" href=# value="SE.ADT.LITR.FE.ZS">Tasa de alfabetización, mujeres adultas (% de mujeres de 15 años o más)</a><br/>
-          <a id="SE.ADT.1524.LT.FM.ZS" href=# value="SE.ADT.1524.LT.FM.ZS">Proporción de mujeres con respecto a varones de jóvenes alfabetizados (% de jóvenes entre 15 y 24 años de edad)</a><br/>
-          <a id="SE.ADT.1524.LT.FE.ZS" href=# value="SE.ADT.1524.LT.FE.ZS">Tasa de alfabetización, mujeres jóvenes (% de mujeres entre 15 y 24 años)</a><br/>
-          <a id="SL.EMP.1524.SP.FE.Z" href=# value="SL.EMP.1524.SP.FE.Z">Relación entre empleo y población, edades entre 15 y 24 años, mujeres (%) (estimación modelado OIT)</a><br/>
-        </ul><br/>
-
+         <ul id="listSG">  
+         </ul><br/>
       <h class="titletypeindicator">Educación</h><br/><br/>
-      <ul>
-          <a id="SE.TER.TCHR.FE.ZS" href=# value="SE.TER.TCHR.FE.ZS">Educacin terciaria, profesores (% de mujeres)</a><br/>
-          <a id="SE.TER.ENRR.FE" href=# value="SE.TER.ENRR.FE">Inscripción escolar, nivel terciario, mujeres (% bruto)</a><br/>
-          <a id="SE.SEC.UNER.LO.FE.ZS" href=# value="SE.SEC.UNER.LO.FE.ZS">Adolescentes que no asisten a la escuela, mujeres (% de mujeres en edad de asistir al ciclo inferior de la escuela secundaria)</a><br/>
-          <a id="SE.SEC.PROG.FE.ZS" href=# value="SE.SEC.PROG.FE.ZS">Transición a la escuela secundaria, mujeres (%)</a><br/>
-          <a id="SE.SEC.NENR.FE" href=# value="SE.SEC.NENR.FE">Inscripción escolar, nivel secundario, mujeres (% neto)</a><br/>
-          <a id="SE.SEC.ENRR.FE" href=# value="SE.SEC.ENRR.FE">Inscripción escolar, nivel secundario, mujeres (% bruto)</a><br/>
-          <a id="SE.SEC.ENRL.VO.FE.ZS" href=# value="SE.SEC.ENRL.VO.FE.ZS">Educación de nivel secundario, alumnos en programas vocacionales (% de mujeres)</a><br/>
-          <a id="SE.SEC.ENRL.GC.FE.ZS" href=# value="SE.SEC.ENRL.GC.FE.ZS">Educación de nivel secundario, alumnos en programas de educación general (% de mujeres)</a><br/>
-          <a id="SE.SEC.ENRL.FE.ZS" href=# value="SE.SEC.ENRL.FE.ZS">Educación de nivel secundario, alumnos (% de mujeres)</a><br/>
-          <a id="SE.SEC.CMPT.LO.FE.ZS" href=# value="SE.SEC.CMPT.LO.FE.ZS">Tasa de finalización del ciclo inferior de la educación secundaria, mujeres (% del grupo etario pertinente)</a><br/>
-          <a id="SE.PRM.TENR.FE" href=# value="SE.PRM.TENR.FE">Total de inscripciones, nivel primario, mujeres (% neto)</a><br/>
-          <a id="SE.PRM.TCHR.FE.ZS" href=# value="SE.PRM.TCHR.FE.ZS">Educación de nivel primario, maestras (% de mujeres)</a><br/>
-          <a id="SE.PRM.REPT.FE.ZS" href=# value="SE.PRM.REPT.FE.ZS">Repetidores, escuela primaria, mujeres (% de mujeres inscriptas)</a><br/>
-          <a id="SE.PRM.PRSL.FE.ZS" href=# value="SE.PRM.PRSL.FE.ZS">Perseverancia en la escuela hasta el último grado del nivel primario, mujeres (% de la cohorte)</a><br/>
-          <a id="SE.PRM.PRS5.FE.ZS" href=# value="SE.PRM.PRS5.FE.ZS">Perseverancia en la escuela hasta el quinto grado, mujeres (% de la cohorte)</a><br/>
-          <a id="SE.PRM.OENR.FE.ZS" href=# value="SE.PRM.OENR.FE.ZS">Alumnos de mayor edad, nivel primario, mujeres (% de matrícula de mujeres)</a><br/>
-          <a id="SE.PRM.NINT.FE.ZS" href=# value="SE.PRM.NINT.FE.ZS">Tasa neta de ingreso en primer grado, mujeres (% de población en edad escolar oficial)</a><br/>
-          <a id="SE.PRM.NENR.FE" href=# value="SE.PRM.NENR.FE">Inscripción escolar, nivel primario, mujeres (% neto)</a><br/>
-          <a id="SE.PRM.GINT.FE.ZS" href=# value="SE.PRM.GINT.FE.ZS">Tasa bruta de ingreso en primer grado, mujeres (% del grupo etario correspondiente)</a><br/>
-          <a id="SE.PRM.ENRR.FE" href=# value="SE.PRM.ENRR.FE">Inscripción escolar, nivel primario, mujeres (% bruto)</a><br/>
-          <a id="SE.PRM.ENRL.FE.ZS" href=# value="SE.PRM.ENRL.FE.ZS">Educación de nivel primario, alumnos (% de mujeres)</a><br/>
-          <a id="SE.PRM.CMPT.FE.ZS" href=# value="SE.PRM.CMPT.FE.ZS">Tasa de finalización de la educación de nivel primario, mujeres (% del grupo etario correspondiente)</a><br/>
-          <a id="SE.PRE.ENRR.FE" href=# value="SE.PRE.ENRR.FE">Inscripción escolar, nivel preprimario, mujeres (% bruto)</a><br/>
-          <a id="SL.UEM.NEET.FE.ZS" href=# value="SL.UEM.NEET.FE.ZS">Proporción de jóvenes sin educación, empleo ni capacitación, mujeres (% de la población de mujeres jóvenes)</a><br/>
-        </ul><br/>
+         <ul id="listSE">
+         </ul><br/>
+      <h class="titletypeindicator">Población</h><br/><br/>
+         <ul id="listSP">
+         </ul><br/><br/>   
+       <h class="titletypeindicator">Sector Privado</h><br/><br/>
+          <ul id="listIC" > 
+          </ul><br/>
+       <h class="titletypeindicator">Salud</h><br/><br/>
+          <ul id="listSH">  
+          </ul><br/>
+       <h class="titletypeindicator">Protección Social</h><br/><br/>
+          <ul id="listper">
+          </ul><br/>
+       <h class="titletypeindicator">Sector Público</h><br/><br/>
+          <ul id="listMS">
+          </ul><br/><br/>
 
-
-        <h class="titletypeindicator">Demográficos</h><br/><br/>
-        <ul>
-          <a id="SP.POP.TOTL.FE.ZS" href=# value="SP.POP.TOTL.FE.ZS">Población, mujeres (% del total)</a><br/>
-          <a id="SP.POP.TOTL.FE.IN" href=# value="SP.POP.TOTL.FE.IN">Población, mujeres</a><br/>
-          <a id="SP.POP.BRTH.MF" href=# value="SP.POP.BRTH.MF">Proporción de sexos al nacer (mujeres cada 1000 hombres)</a><br/>
-          <a id="SP.POP.65UP.FE.ZS" href=# value="SP.POP.65UP.FE.ZS">Población de 65 años de edad y más, mujeres (% del total)</a><br/>
-          <a id="SP.POP.65UP.FE.IN" href=# value="SP.POP.65UP.FE.IN">Población de 65 años de edad y más, mujeres</a><br/>
-          <a id="SP.POP.1564.FE.ZS" href=# value="SP.POP.1564.FE.ZS">Población entre 15 y 64 años de edad, mujeres (% del total)</a><br/>
-          <a id="SP.POP.1564.FE.IN" href=# value="SP.POP.1564.FE.IN">Población entre 15 y 64 años de edad, mujeres</a><br/>
-          <a id="SP.POP.0014.FE.ZS" href=# value="SP.POP.0014.FE.ZS">Población entre 0 y 14 años de edad, mujeres (% del total)</a><br/>
-          <a id="SP.POP.0014.FE.IN" href=# value="SP.POP.0014.FE.IN">Población entre 0 y 14 años de edad, mujeres</a><br/>
-        </ul><br/>
-
-    </div> 
+    </div>
+    <div id="chart_div"></div> 
      </section>
     </section>
 
