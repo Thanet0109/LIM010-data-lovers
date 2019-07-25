@@ -15,7 +15,7 @@
 
 ## Título
 
-**Latin Data**
+# **Latin Data**
 
 ## Introducción
 
@@ -45,35 +45,32 @@ Diariamente se requieren de datos para conocimiento, análisis y toma de decisio
 Observando esta situación se planificó el proyecto "Latin Data" que se desarrolla ante la problemática de inaccesibilidad inmediata y rápida de datos que incluyen indicadores de ciertos países Latinoamericanos como lo son Perú, México, Chile y Brasil.
 
 
-### Resumen del Feedback
+## Resumen del Feedback
+![feedback](reaimg/feedback.png)
 
-![Imagen 1][1]
-[1]: feedback.png
-
-### Imagen y link del prototipo en Figma
+## Imagen y link del prototipo en Figma
 
 A través del siguiente Link se podrá obtener el figma de las Historias de Usuario planteadas.  https://www.figma.com/file/5RWdlRj8dgGPSW0tP6CL7Z/LatinData?node-id=1%3A2
 
                   Prototipo en baja fidelidad ( Web )
 
-![Imagen 1][1]
-[1]: papelylapiz1.jpg
-[2]: papelylapiz2.jpg
-[3]: papelylapiz3.jpg
-[4]: papelylapiz4.jpg
+![1](reaimg/papelylapiz1.jpg)
+![2](reaimg/papelylapiz2.jpg)
+![3](reaimg/papelylapiz3.jpg)
+![4](reaimg/papelylapiz4.jpg)
 
                   Prototipo en baja fidelidad ( Movil )
 
-![Imagen 2][1]
-[1]: papelylapiz5.jpg
-[2]: papelylapiz6.jpg
+
+![5](reaimg/papelylapiz5.jpg)
+![6](reaimg/papelylapiz6.jpg)
 
                   Prototipo de Alta fidelidad ( Web )
 
-![Imagen 3][2]
 
-[1]: Historia1.web.PNG
-[2]: Historia1.mobile.PNG "scaphandre"
+
+![7](reaimg/Historia1.web.PNG)
 
                  Prototipo de Alta fidelidad ( Movil )
 
+![8](reaimg/Historia1.mobile.PNG)
