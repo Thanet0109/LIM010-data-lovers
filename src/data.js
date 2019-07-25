@@ -1,39 +1,105 @@
-google.charts.load('current', {packages: ['corechart', 'line']});
-google.charts.setOnLoadCallback(drawBackgroundColor);
+google.charts.load('current', { packages: ['corechart', 'line'] });
 
-let dataindicatorperu=WORLDBANK.PER.indicators;
+google.charts.load('current', { 'packages': ['table'] });
+
+const getIndicatorsForCountry = (data, string) => {
+ let arr = [];
+ const arrayIndicators = data[string].indicators;
+ for (let i = 0; i < arrayIndicators.length; i++) {
+ arr.push(arrayIndicators[i]);
+ }
+ return arr;
+};
+
+const createdatanew = (data, pais, string) => {
+ const arrData = data[pais].indicators;
+ let arrIndicatorsByType = arrData.filter(dataind => (dataind.indicatorCode.startsWith(string) === true));
+ return arrIndicatorsByType;
+};
+
+const CreateArray = (data1) => {
+ let matrizIndicator = new Array(Object.entries(data1));
+ let inmatriz = matrizIndicator[0];
+ inmatriz.forEach((ele, ind) => {
+ inmatriz[ind][0] = parseInt(inmatriz[ind][0]);
+ inmatriz[ind][1] = parseFloat(inmatriz[ind][1]);
+ });
+ let datanew = inmatriz.filter(dataind => isNaN(dataind[1]) === false);
+ return datanew;
+};
+
+let drawBasic2 = (data1, min, max) => { 
+ let datafilter = data1.filter(datanew => (datanew[0] >= min && datanew[0] <= max));
+ console.log(datafilter);
+ let data = new google.visualization.DataTable();
+ data.addColumn('number', 'X');
+ data.addColumn('number', '% o escala');
+
+ data.addRows(datafilter);
+
+ let options = {
+ hAxis: {
+ title: 'Year'
+ },
+ vAxis: {
+ title: 'Indicator'
+ }
+ };
+
+ let chartnormal = new google.visualization.LineChart(document.getElementById('chart'));
+
+ chartnormal.draw(data, options);
+};
 
 
- const drawBackgroundColor=()=> {
-      let data = new google.visualization.DataTable();
-      data.addColumn('number', 'X');
-      data.addColumn('number', 'country');
+let drawTable = (data1, min, max) => {
+ let datafilter = data1.filter(datanew => (datanew[0] >= min && datanew[0] <= max));
+ const data = new google.visualization.DataTable();
+ data.addColumn('number', 'año');
+ data.addColumn('number', 'porcentaje');
+ data.addRows(datafilter);
 
-      data.addRows([
-        [0, 0],   [1, 10],  [2, 23],  [3, 17],  [4, 18],  [5, 9],
-        [6, 11],  [7, 27],  [8, 33],  [9, 40],  [10, 32], [11, 35],
-        [12, 30], [13, 40], [14, 42], [15, 47], [16, 44], [17, 48],
-        [18, 52], [19, 54], [20, 42], [21, 55], [22, 56], [23, 57],
-        [24, 60], [25, 50], [26, 52], [27, 51], [28, 49], [29, 53],
-        [30, 55], [31, 60], [32, 61], [33, 59], [34, 62], [35, 65],
-        [36, 62], [37, 58], [38, 55], [39, 61], [40, 64], [41, 65],
-        [42, 63], [43, 66], [44, 67], [45, 69], [46, 69], [47, 70],
-        [48, 72], [49, 68], [50, 66], [51, 65], [52, 67], [53, 70],
-        [54, 71], [55, 72], [56, 73], [57, 75], [58, 70], [59, 68],
-        [60, 64], [61, 60], [62, 65], [63, 67], [64, 68], [65, 69],
-        [66, 70], [67, 72], [68, 75], [69, 80]
-      ]);
+ let table = new google.visualization.Table(document.getElementById('table_div'));
 
-      var options = {
-        hAxis: {
-          title: 'Time'
-        },
-        vAxis: {
-          title: 'Popularity'
-        },
-        backgroundColor: '#f1f8e9'
-      };
+ table.draw(data, {
+ showRowNumber: true,
+ width: '100%',
+ height: '100%'
+ });
+};
 
-      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
-      chart.draw(data, options);
-    }
+
+let drawTableorder = (data1, min, max) => {
+ let datafilter = data1.filter(datanew => (datanew[0] >= min && datanew[0] <= max));
+ let inmatrizorder = datafilter;
+
+ let sortfunction = (order1, order2) => {
+ if (order1[1] === order2[1]) {
+ return 0;
+ } else {
+ return (order1[1] < order2[1]) ? -1 : 1;
+ }
+ };
+ inmatrizorder.sort(sortfunction);
+
+ const data = new google.visualization.DataTable();
+ data.addColumn('number', 'año');
+ data.addColumn('number', 'porcentaje');
+ data.addRows(inmatrizorder);
+
+ const table = new google.visualization.Table(document.getElementById('table_divorderasc'));
+
+ table.draw(data, {
+ showRowNumber: true,
+ width: '100%',
+ height: '100%'
+ });
+};
+
+
+window.createdatanew = createdatanew;
+window.drawBasic2 = drawBasic2;
+window.drawTable = drawTable;
+window.drawTableorder = drawTableorder;
+window.CreateArray = CreateArray;
+

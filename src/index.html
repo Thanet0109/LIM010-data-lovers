@@ -1,96 +1,237 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body id="body" class="bodyLogin">
-  <header id="Head" class="head  hide">Latin Data</header>
-  <main>
-    <!---ScreenLogin-->
-    <section id="botonLogin" class="masterLogin">
-      <section class="backgroundLogin">
-        <div class="AllLogo">
-          <img class="Logo" src="img/Logo.png" />
-          <div id="Login">Latin Data</div>
-        </div>
-        <form>
-          <section class="register">
-            <h2 class="user">Usuario</h2>
-            <input class="writeuser" type="text" id="user">
-          </section>
-          <section class="register">
-            <h2 class="user">Contraseña</h2>
-            <input class="writeuser" type="password" id="password">
-          </section>
-          <section class="buttonentry">
-            <input class="buttonLogin" type="button" value="INGRESAR" id="EnterLogin">
-          </section>
-          <!-- <a href="">¿Olvidaste Contraseña?</a><br/>
-          <a href="">¿No tienes una cuenta?<strong> Registrate</strong></a><br/></a><br/>-->
-          <p id="mistakeLogin" class="error"></p>
-        </form>
-      </section>
+  <!--HEADER-->
+  <header id="Head" class="hide">
+    <section class="order">
+      <div class="head">Latin Data</div>
+      <img class="logohead" src="img/Logo.png" />
     </section>
-<!---ScreenSelectCountry-->
-    <section id="screenSelectCountry"  class="hide">
-      <div id="countries">
-       <ul>
-         <li  id="peru" value="PER">Perú</li>
-         <li  id="chile" value="CHL">Chile</li>
-         <li  id="mexico" value="MEX">México</li>
-         <li id="brasil" value="BRA">Brasil</li>
-       </ul>
+    <section id="screenSelectCountry" class="hide">
+      <div class="selectcountry">
+        <h>Seleccionar país</h>
+      </div>
+      <div id="countries" class="hide">
+        <ul id="pais">
+          <li id="PER">Perú</li>
+          <li id="CHL">Chile</li>
+          <li id="MEX">México</li>
+          <li id="BRA">Brasil</li>
+        </ul>
+      </div>
+    </section>
+  </header>
+  <!---ScreenLogin-->
+  <section id="botonLogin" class="masterLogin">
+    <section class="backgroundLogin">
+      <div class="AllLogo">
+        <img class="Logo" src="img/Logo.png" />
+        <div id="Login">Latin Data</div>
+      </div>
+      <form>
+        <section class="register">
+          <h2 class="user">Usuario</h2>
+          <input class="writeuser" type="text" id="user">
+        </section>
+        <section class="register">
+          <h2 class="user">Contraseña</h2>
+          <input class="writeuser" type="password" id="password">
+        </section>
+        <p id="mistakeLogin" class="error"></p>
+        <section class="buttonentry">
+          <input class="buttonLogin" type="button" value="INGRESAR" id="EnterLogin">
+        </section>
+        <!-- <a href="">¿Olvidaste Contraseña?</a></br>
+          <a href="">¿No tienes una cuenta?<strong> Registrate</strong></a><br/></a><br/>-->
+       
+      </form>
+    </section>
+  </section>
+
+  <!---ScreenNoticias-->
+  <section id="not" class="hide">
+    <section id="banner" class='bank'>
+      <div class="contenedor">
+        <div class="contenedor-bm">
+          <h1> Banco Mundial</h1>
+          <p class="info-bm"> Los datos y las investigaciones sirven para establecer prioridades,
+            intercambiar conocimientos acerca de las medidas que funcionan y medir los avances conseguidos.</p>
+          <a href="https://www.bancomundial.org/">Leer más</a>
+        </div>
       </div>
     </section>
 
-<!---ScreenSelectCountry-->
-<section  id="screenindicatorcountries" class="backgroundindicators">
-    <section id="screencountry" class="hide overview">
-     <div id="foranclas">
-       <h class="titleindicators">Indicadores</h><br/><br/>
-       <h class="titletypeindicator">Empleo</h><br/><br/>
-         <div id="listSL">
-         </div><br/>    
-      <h class="titletypeindicator">Desarrollo Social</h><br/><br/>
-         <ul id="listHD" > 
-         </ul><br/>
-      <h class="titletypeindicator">Género</h><br/><br/>
-         <ul id="listSG">  
-         </ul><br/>
-      <h class="titletypeindicator">Educación</h><br/><br/>
-         <ul id="listSE">
-         </ul><br/>
-      <h class="titletypeindicator">Población</h><br/><br/>
-         <ul id="listSP">
-         </ul><br/><br/>   
-       <h class="titletypeindicator">Sector Privado</h><br/><br/>
-          <ul id="listIC" > 
-          </ul><br/>
-       <h class="titletypeindicator">Salud</h><br/><br/>
-          <ul id="listSH">  
-          </ul><br/>
-       <h class="titletypeindicator">Protección Social</h><br/><br/>
-          <ul id="listper">
-          </ul><br/>
-       <h class="titletypeindicator">Sector Público</h><br/><br/>
-          <ul id="listMS">
-          </ul><br/><br/>
+    <section id="info">
+      <h2 class="titu">NOTICIAS</h2>
+      <div class="info-colum info-colum1">
 
-    </div>
-    <div id="chart_div"></div> 
-     </section>
+        <div class="info-descrip">
+          <h3 class="decrip-titu">El empleo, núcleo del desarrollo:</h3>
+          <p class="text">Transformar economías y sociedades mediante puestos de trabajo sostenibles</p>
+          <a class="link"
+            href="https://www.bancomundial.org/es/results/2018/02/13/jobs-at-the-core-of-development">Más</a>
+        </div>
+      </div>
+
+      <div  class="info-colum info-colum2">
+
+        <div class="info-descrip">
+          <h3 class="decrip-titu">Fin a la violencia en América Latina:</h3>
+          <p class="text">Una mirada a la prevención desde la infancia hasta la edad adulta</p>
+          <a class="link"
+            href="https://www.bancomundial.org/es/results/2018/05/17/fin-a-la-violencia-en-america-latina-una-mirada-a-la-prevencion-desde-la-infancia-hasta-la-edad-adulta">Más</a>
+        </div>
+      </div>
+
+      <div class="info-colum info-colum3">
+
+        <div class="info-descrip">
+          <h3 class="decrip-titu">Combate a la desnutrición en Perú: </h3>
+          <p class="text">Mejoras en la demanda, oferta y administración de servicios de salud y nutrición en tres
+            regiones.</p>
+          <a class="link"
+            href="https://www.bancomundial.org/es/results/2018/04/03/stronger-open-trade-policies-enables-economic-growth-for-all">Más</a>
+        </div>
+      </div>
+      <div class="info-colum info-colum4">
+        <div class="info-descrip">
+          <h3 class="decrip-titu">Mejorar los sistemas de información del agua y el saneamiento: </h3>
+          <p class="text">En lugares rurales de América Latina y el Caribe</p>
+          <a class="link"
+            href="https://www.bancomundial.org/es/results/2017/04/04/improving-rural-water-sanitation-information-systems-latinamerica">Más</a>
+        </div>
+      </div>
     </section>
 
+    <section id="whos">
+
+      <div>
+        <div class="mision">
+          <h2>Nuestra misión </h2>
+          <h3>Brindarte una excelente experiencia al buscar los indicadores solicitados</h3>
+        </div>
+        <div id="dat">
+          <h1 class="dato">Empieza la busqueda</h1>
+          <h2 class="datos">Elige el país que desees su información</h2>
+        </div>
+        <div class="bloque">
+          <li id="PER">Perú</li>
+          <li id="CHL">Chile</li>
+          <li id="MEX">México</li>
+          <li id="BRA">Brasil</li>
+        </div>
+    </section>
+  </section>
+  <!---ScreenNoticias-->
+  <main id="main">
+    <div id="cont" class="cont">
+      <div id="presentation" class="sli hide">
+        <section class="contSelect">
+          <p>Conoce el flujo de los Indicadores al seleccionar un indicador</p>
+        </section>
+        <slider>
+          <slide>
+            <div class="contentancla"><a
+                href="https://peru21.pe/peru/promperu-peru-recibe-cuatro-premios-world-travel-awards-sudamerica-2019-490140"
+                target="_blank" class="ancla">Perú recibe cuatro premios en los World Travel Awards Sudamérica 2019</a>
+            </div>
+          </slide>
+          <slide>
+            <div class="contentancla"><a
+                href="https://peru21.pe/lima/igualdad-genero-unesco-explica-conceptos-claves-debatir-informado-67830"
+                target="_blank" class="ancla">¿Sabes qué es la igualdad de género? Unesco explica conceptos claves para
+                debatir bien informado</a></div>
+          </slide>
+          <slide>
+            <div class="contentancla"><a href="https://elpais.com/cultura/2019/06/28/actualidad/1561675399_810135.html"
+                target="_blank" class="ancla"> “Mi más grande influencia culinaria es mi madre”</a></div>
+          </slide>
+          <slide>
+            <div class="contentancla"><a
+                href="https://www.zankyou.com.pe/p/dia-de-la-mujer-imperdibles-historias-de-peruanas-del-siglo-xxi-que-nos-inspiran"
+                target="_blank" class="ancla">Día de la Mujer: imperdibles historias de peruanas del siglo XXI que nos
+                inspiran</a></div>
+          </slide>
+        </slider>
+      </div>
+      <section id="screencountry" class="hide">
+        <section class="buttonindicator">
+          <a class="titleindicators">Indicadores</a>
+        </section>
+        <div class="mainmenu">
+          <div class="menu">
+            <ul id="listAllindicators">
+              <li><a class="titletypeindicator" id="SL" class="hide" href="#">Empleo</a>
+                <ul id="listSL">
+                </ul>
+              </li>
+              <li><a class="titletypeindicator" id="HD" class="hide" href="#">Desarrollo Social</a>
+                <ul id="listHD">
+                </ul>
+              </li>
+              <li><a class="titletypeindicator" id="SG" class="hide" href="#">Género</a>
+                <ul id="listSG">
+              </li>
+            </ul>
+            <li><a class="titletypeindicator" id="SE" class="hide" href="#">Educación</a>
+              <ul id="listSE">
+            </li>
+            </ul>
+            <li><a class="titletypeindicator" id="SP" class="hide" href="#">Población</a>
+              <ul id="listSP">
+            </li>
+            </ul>
+            <li><a class="titletypeindicator" id="IC" class="hide" href="#">Sector Privado</a>
+              <ul id="listIC">
+            </li>
+            </ul>
+            <li><a class="titletypeindicator" id="SH" class="hide" href="#">Salud</a>
+              <ul id="listSH">
+            </li>
+            </ul>
+            <li><a class="titletypeindicator" id="per" class="hide" href="#">Protección Social</a>
+              <ul id="listper">
+            </li>
+            </ul>
+            <li><a class="titletypeindicator" id="MS" class="hide" href="#">Sector Público</a>
+              <ul id="listMS">
+            </li>
+            </ul>
+            </ul>
+          </div>
+        </div>
+
+      </section>
+      <section id="ScreenResult" class="hide">
+        <div>
+          <h id="indicatorName"></h>
+        </div><br />
+        <div id="multirange"></div>
+        <div id="chart"></div></br>
+        <div id="table_div"></div></br>
+        <div id="table_divorderasc"></div>
+        <div id="orderchart_div"></div>
+        <div id="prom"></div>
+      </section>
+    </div>
+
+
+
+    <!--  </section>-->
+
   </main>
-  <footer></footer>
-  <!-- <script src="./data/lol/lol.js"></script> -->
-  <!-- <script src="./data/pokemon/pokemon.js"></script> -->
+  <footer class="footer">
+    <a class="foot" href="https://github.com/thanet0109">&copy; Fiorella</a>&<a class="foot"
+      href="https://github.com/yomiramontalvo">Yomira</a>
+  </footer>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script src="./data/worldbank/worldbank.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>

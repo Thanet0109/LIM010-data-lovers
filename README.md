@@ -4,6 +4,7 @@
 
 - [Índice](#índice)
 - [Título](#titulo)
+- [Introducción](#introduccion)
 - [Resumen del Proyecto](#resumen-del-proyecto)
 - [Investigación UX](#imagen-del-proyecto-final)
    - [Usuario y objetivo en Relación al Producto](#usuario-y-objetivo-en-relacion-al-producto)
@@ -16,9 +17,17 @@
 
 **Latin Data**
 
+##Introducción
+
+En pleno siglo XXI la información acerca de datos e indicadores de páginas Web y/o aplicaciones no cuenta con el valor necesario. 
+Conforme a ello se realizó un estudio en el cual se observó que existen escasos medios que brindan información de datos e indicadores. El Banco Mundial cumple con esta función, sin embargo su trasfondo tiene como objetivo combatir la pobreza extrema ayudando a países que necesiten concretar proyectos para beneficiar a un conjunto de personas.
+
+Sin embargo, se entiende que el usuario requiere información más precisar, por ello se propuso como solución conectar y hacer accesible el ingreso a ciertos datos de países Latinoamericanos no solo para analizar y recopilar información sino también para estar al tanto de la realidad en la que se encuentran estos país, para afianzar la información se unió un conjunto de noticias relacionadas con los temas, deseando así una experiencia confiable y rápida de ingresar.
+
+
 ## Resumen del Proyecto
 
-El proyecto “Latin Data” busca facilitar el acceso a datos e indicadores de países Latinoamericanos  con la finalidad de que por medio de esta plataforma, el usuario consiga la eficiencia en su búsqueda. 
+El proyecto “Latin Data” busca facilitar el acceso a datos e indicadores de países Latinoamericanos  con la finalidad de hacer más eficiente la búsquedad del usuario. 
 El ingreso a esta plataforma se realizará a través del usuario y contraseña “LABORATORIA”.
 
 
@@ -28,29 +37,42 @@ El ingreso a esta plataforma se realizará a través del usuario y contraseña �
 
 ### Usuario y objetivo en Relación al Producto
 
-Este proyecto va orientado a estudiantes, analistas, ejecutivos y/o profesionales de cualquier especialidad que a través de indicadores económicos, demográficos y comerciales de países Latinoamericanos como México, Perú, Brasil y Chile,  puedan obtener información
-para conocimiento, análisis y toma de decisiones.
-
+Este proyecto va orientado a estudiantes, analistas, ejecutivos y/o profesionales de cualquier especialidad, que requieran obtener información para conocimiento, análisis y tomar decisiones respecto a indicadores económicos, demográficos y comerciales de países Latinoamericanos como México, Perú, Brasil y Chile.
 
 ### Problema y Necesidades que resuelve
 
-El proyecto "Latin Data" se está desarrollando ante la problemática de inaccesibilidad inmediata y rápida de datos que incluyen indicadores demográficos, económicos y comerciales de los países Latinoamericanos de Perú, México, Chile y Brasil.
-Diariamente se requieren de datos para conocimiento, análisis y toma de decisiones: lo cual usualmente son buscados en Google u otras plataformas. Sin embargo los datos encontrados no siempre pueden ser filtrados, seleccionados y ordenados lo que hace más complicada la obtención de esta información, por ello se desarrolla la plataforma “Latin Data” con la finalidad de facilitar el acceso a datos que incluyen indicadores demográficos, económicos y comerciales de los países Latinoamericanos de Perú, México, Chile y Brasil.
+Diariamente se requieren de datos para conocimiento, análisis y toma de decisiones: lo cual usualmente son buscados en Google u otras plataformas. Sin embargo los datos encontrados no siempre pueden ser filtrados, seleccionados y ordenados lo que hace más complicada la obtención de esta información, por ello se desarrolla la plataforma “Latin Data” con la finalidad de facilitar el acceso a datos que incluyen indicadores demográficos, económicos y comerciales de los países Latinoamericanos como Perú, México, Chile y Brasil.
+Observando esta situación se planificó el proyecto "Latin Data" que se desarrolla ante la problemática de inaccesibilidad inmediata y rápida de datos que incluyen indicadores de ciertos países Latinoamericanos como lo son Perú, México, Chile y Brasil.
 
 
-### Resumen del Feedback (mejoras a realizar)
+### Resumen del Feedback
+
+![Imagen 1][1] 
+[1]: feedback.png
 
 ### Imagen y link del prototipo en Figma
 
-A través del siguiente Link podrán obtener el figma de la Primera Historia https://www.figma.com/file/5RWdlRj8dgGPSW0tP6CL7Z/LatinData?node-id=1%3A2
+A través del siguiente Link se podrá obtener el figma de las Historias de Usuario planteadas.  https://www.figma.com/file/5RWdlRj8dgGPSW0tP6CL7Z/LatinData?node-id=1%3A2
 
-                   Primera Historia (Login en Web ) 
+                   Prototipo en baja fidelidad ( Web ) 
 
 ![Imagen 1][1] 
+[1]: papelylapiz1.jpg
+[2]: papelylapiz2.jpg
+[3]: papelylapiz3.jpg
+[4]: papelylapiz4.jpg
 
-                   Primera Historia (Login en Movil ) 
+                   Prototipo en baja fidelidad ( Movil ) 
 
-![Imagen 2][2]
+![Imagen 2][1] 
+[1]: papelylapiz5.jpg
+[2]: papelylapiz6.jpg
+
+                   Prototipo de Alta fidelidad ( Web )
+
+![Imagen 3][2]
 
  [1]: Historia1.web.PNG 
  [2]: Historia1.mobile.PNG "scaphandre" 
+
+                  Prototipo de Alta fidelidad ( Movil )
