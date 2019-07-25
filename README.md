@@ -7,19 +7,19 @@
 - [Introducción](#introduccion)
 - [Resumen del Proyecto](#resumen-del-proyecto)
 - [Investigación UX](#imagen-del-proyecto-final)
-   - [Usuario y objetivo en Relación al Producto](#usuario-y-objetivo-en-relacion-al-producto)
-   - [Problema y Necesidades que resuelve](#problema-y-necesidades-que-resuelve)
-   - [Resumen del Feedback](#resumen-del-feedback)
-   - [Imagen y link del prototipo en Figma](#imagen-y-link-del-prototipo-en-Figma)
+  - [Usuario y objetivo en Relación al Producto](#usuario-y-objetivo-en-relacion-al-producto)
+  - [Problema y Necesidades que resuelve](#problema-y-necesidades-que-resuelve)
+  - [Resumen del Feedback](#resumen-del-feedback)
+  - [Imagen y link del prototipo en Figma](#imagen-y-link-del-prototipo-en-Figma)
 
 
 ## Título
 
 **Latin Data**
 
-##Introducción
+## Introducción
 
-En pleno siglo XXI la información acerca de datos e indicadores de páginas Web y/o aplicaciones no cuenta con el valor necesario. 
+En pleno siglo XXI la información acerca de datos e indicadores de páginas Web y/o aplicaciones no cuenta con el valor necesario.
 Conforme a ello se realizó un estudio en el cual se observó que existen escasos medios que brindan información de datos e indicadores. El Banco Mundial cumple con esta función, sin embargo su trasfondo tiene como objetivo combatir la pobreza extrema ayudando a países que necesiten concretar proyectos para beneficiar a un conjunto de personas.
 
 Sin embargo, se entiende que el usuario requiere información más precisar, por ello se propuso como solución conectar y hacer accesible el ingreso a ciertos datos de países Latinoamericanos no solo para analizar y recopilar información sino también para estar al tanto de la realidad en la que se encuentran estos país, para afianzar la información se unió un conjunto de noticias relacionadas con los temas, deseando así una experiencia confiable y rápida de ingresar.
@@ -27,7 +27,7 @@ Sin embargo, se entiende que el usuario requiere información más precisar, por
 
 ## Resumen del Proyecto
 
-El proyecto “Latin Data” busca facilitar el acceso a datos e indicadores de países Latinoamericanos  con la finalidad de hacer más eficiente la búsquedad del usuario. 
+El proyecto “Latin Data” busca facilitar el acceso a datos e indicadores de países Latinoamericanos  con la finalidad de hacer más eficiente la búsquedad del usuario.
 El ingreso a esta plataforma se realizará a través del usuario y contraseña “LABORATORIA”.
 
 
@@ -47,32 +47,33 @@ Observando esta situación se planificó el proyecto "Latin Data" que se desarro
 
 ### Resumen del Feedback
 
-![Imagen 1][1] 
+![Imagen 1][1]
 [1]: feedback.png
 
 ### Imagen y link del prototipo en Figma
 
 A través del siguiente Link se podrá obtener el figma de las Historias de Usuario planteadas.  https://www.figma.com/file/5RWdlRj8dgGPSW0tP6CL7Z/LatinData?node-id=1%3A2
 
-                   Prototipo en baja fidelidad ( Web ) 
+                  Prototipo en baja fidelidad ( Web )
 
-![Imagen 1][1] 
+![Imagen 1][1]
 [1]: papelylapiz1.jpg
 [2]: papelylapiz2.jpg
 [3]: papelylapiz3.jpg
 [4]: papelylapiz4.jpg
 
-                   Prototipo en baja fidelidad ( Movil ) 
+                  Prototipo en baja fidelidad ( Movil )
 
-![Imagen 2][1] 
+![Imagen 2][1]
 [1]: papelylapiz5.jpg
 [2]: papelylapiz6.jpg
 
-                   Prototipo de Alta fidelidad ( Web )
+                  Prototipo de Alta fidelidad ( Web )
 
 ![Imagen 3][2]
 
- [1]: Historia1.web.PNG 
- [2]: Historia1.mobile.PNG "scaphandre" 
+[1]: Historia1.web.PNG
+[2]: Historia1.mobile.PNG "scaphandre"
 
-                  Prototipo de Alta fidelidad ( Movil )
+                 Prototipo de Alta fidelidad ( Movil )
+
